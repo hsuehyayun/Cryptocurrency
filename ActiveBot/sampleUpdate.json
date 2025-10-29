@@ -1,0 +1,18 @@
+{
+  "type": "price_update",
+  "price_feed": {
+    "id": "ef0d8b6fda2ceba41da15d4095d1da392a0d2f8ed0c6c7bc0f4cfac8c280b56d",
+    "price": {
+      "price": "18560665573",
+      "conf": "12445040",
+      "expo": -8,
+      "publish_time": 1761140330
+    },
+    "ema_price": {
+      "price": "18557348200",
+      "conf": "8529288",
+      "expo": -8,
+      "publish_time": 1761140330
+    }
+  }
+}
