@@ -1,0 +1,27 @@
+manifestVersion: 1
+id: calypso
+name: Calypso
+tagline: Calypso is a trading bot leveraging Solana, Jupiter and Jito
+icon: https://svgur.com/i/1Bzx.svg
+category: Development
+version: "1.0.0"
+port: 4000
+description: >-
+  Calypso is a trading bot leveraging Solana, Jupiter and Jito
+
+developer: Unruggable
+website: https://www.unruggable.io/
+submitter: Unruggable
+submission: https://github.com/hogyzen12/calypso
+repo: https://github.com/hogyzen12/calypso
+support: https://github.com/hogyzen12/calypso/issues
+gallery:
+  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://i.imgur.com/yyVG0Jb.jpeg
+releaseNotes: >-
+  Packaging for Umbrel hopefully.
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""

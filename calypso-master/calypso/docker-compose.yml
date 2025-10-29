@@ -1,0 +1,29 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      # Update the APP_HOST to use your app's new name
+      APP_HOST: calypso-bot_server_1
+      APP_PORT: 3000
+
+  server:
+    image: hogyzen12/calypso-bot:v1.0.0
+    user: "1000:1000"
+    init: true
+    environment:
+      NODE_ENV: production
+      RPC_ENDPOINT: "https://mainnet.helius-rpc.com/?api-key=2c0388dc-a082-4cc5-bad9-29437f3c0715"
+      KEYPAIR_PATH: "/Users/hogyzen12/.config/solana/C1PsoU8EPqheU3kv7Gzp6tAoj6UZ5Srtzm4S2f26zss.json"
+      REBALANCE_THRESHOLD: "0.0042"
+      CHECK_INTERVAL: "60"
+      STASH_THRESHOLD: "42"
+      STASH_AMOUNT: "1"
+      STASH_ADDRESS: "StAshdD7TkoNrWqsrbPTwRjCdqaCfMgfVCwKpvaGhuC"
+      USDC_ALLOCATION: "0.50"
+      SOL_ALLOCATION: "0.50"
+      # Add more environment variables for other assets if needed
+    ports:
+      - "3000:3000"
+    volumes:
+      - /Users/hogyzen12/.config/solana/C1PsoU8EPqheU3kv7Gzp6tAoj6UZ5Srtzm4S2f26zss.json # Map the keypair file into the container

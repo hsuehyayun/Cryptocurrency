@@ -1,0 +1,19 @@
+{
+    "name": "calypso-bot",
+    "version": "1.0.0",
+    "description": "Calypso trading bot leveraging Solana, Jupiter, and Jito",
+    "main": "calypso.js",
+    "scripts": {
+      "start": "node calypso.js"
+    },
+    "author": "hogyzen12",
+    "license": "MIT",
+    "dependencies": {
+      "axios": "^1.4.0",
+      "decimal.js": "^10.4.3",
+      "@solana/web3.js": "^1.73.2",
+      "@solana/spl-token": "^0.3.5",
+      "bs58": "^5.0.0"
+    }
+  }
+  
